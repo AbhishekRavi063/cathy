@@ -1,0 +1,61 @@
+.amain {
+    height: 1200px;
+    background-color: black;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about {
+    max-width: 600px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  .about.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .ap {
+    color: white;
+  }
+  
+  .ha {
+    font-size: 95px;
+    margin-top: -50px;
+    color: gray;
+  }
+  .haa{
+    font-size: 85px;
+  }
+  
+  .pic {
+    position: relative;
+    display: inline-block;
+    margin-left: 200px;
+    margin-top: 100px;
+  }
+  
+  .apic {
+    height: 500px;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .pic::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    box-shadow: inset 0 0 30px 30px rgb(0, 0, 0);
+    pointer-events: none;
+    z-index: 2;
+  }
+  

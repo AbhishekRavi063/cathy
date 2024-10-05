@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  background-color: rgb(22, 20, 24);
+  color: #eee;
+  user-select: none;
+}
+
+.moonm {
+  position: relative;
+  background-color: black;
+  height: 800px;
+  width: 100%;
+}
+
+.canvas-container {
+  position: relative;
+  width: 100vw; /* Set fixed width */
+  height: 100vh; /* Set fixed height */
+}
+
+.overlay-text {
+  position: absolute;
+  top: 150px;
+  left: 100px;
+  color: white;
+  font-size: 150px;
+  font-weight: 650;
+  z-index: 1;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  overflow: hidden;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.overlay-text::before {
+  content: '';
+  position: absolute;
+  top: 45px;
+  left: -100%;
+  width: 100%;
+  height: 140px;
+  background-color: rgb(226, 154, 20);
+  z-index: -1;
+  transition: left 0.5s ease-in-out;
+  opacity: 0.5;
+}
+
+.overlay-text:hover::before {
+  left: 0;
+}
+
+.overlay-text.top {
+  top: 120px;
+}
+
+.overlay-text.bottom {
+  top: 320px;
+}
+
+.arrow-icon {
+  position: absolute;
+  top: calc(50% - -310px);
+  left: calc(50% - 50px);
+  font-size: 30px;
+  color: rgb(238, 244, 244);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.moonm:hover .arrow-icon {
+  opacity: 0.2;
+}
+
+

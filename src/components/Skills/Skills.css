@@ -1,0 +1,67 @@
+.logo-game-container {
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(255, 254, 254);
+}
+
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 columns */
+  gap: 20px; /* Space between items */
+  margin: 20px 0;
+  margin-top: 20px;
+}
+.match{
+  margin-top: 30px;
+  font-size: 30px;
+  color: black;
+}
+
+.know{
+  font-size: 50px;
+  font-weight: 600;
+  color: black;
+  padding-top: 10px;
+}
+.points{
+  color: rgb(16, 164, 34);
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.logo-item {
+  padding: 20px; /* Increase padding for larger draggable area */
+   /* Dashed border for drag area */
+  border-radius: 8px; /* Optional: add rounded corners */
+  display: flex; /* Flexbox to align logo and name */
+  flex-direction: column; /* Stack logo and name vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  min-height: 100px; /* Minimum height for drag area */
+  width: 120px; /* Set a narrower width for the draggable area */
+  margin: 0 auto; /* Center the items horizontally */
+}
+
+.logo {
+  width: 70px; /* Adjust logo size */
+  height: auto; /* Maintain aspect ratio */
+  cursor: grab;
+}
+
+.logo-name {
+  margin-top: 8px; /* Space between logo and name */
+  text-align: center; /* Center the name text */
+  color: black;
+  font-weight: bold;
+}
+
+button {
+  margin-top: 20px; /* Space above the button */
+  color: red;
+  font-size: 30px;
+  font-weight: bold;
+}
+.logo:hover{
+  transform: scale(1.1);
+}
