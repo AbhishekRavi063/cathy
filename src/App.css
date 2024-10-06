@@ -42,4 +42,14 @@
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
+
+  @font-face {
+    font-family: 'MyCustomFont'; /* Change this to your desired font name */
+    src: url('./Assets/Bitsumishi-Font/BITSUMIS.TTF') format('truetype'); /* Adjust the path accordingly */
+}
+
+body {
+    font-family: 'MyCustomFont', sans-serif; /* Apply the font to all text */
+}
+
   

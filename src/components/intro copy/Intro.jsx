@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { Canvas, useThree } from '@react-three/fiber';
 import { OrbitControls, useGLTF, useAnimations } from '@react-three/drei';
+import backgroundVideo from '../../Assets/earth3.mp4'; 
 
 import dinosaur from '../../Assets/lustt.glb';
 import './Intro.css'; // Import CSS file
@@ -76,6 +77,11 @@ function Intro() {
   return (
     <div className="introm">
       {/* Glass-like background */}
+
+      <video autoPlay loop muted className="background-video">
+        <source src={backgroundVideo} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       
 
       <div className="canvas-container">
@@ -94,7 +100,7 @@ function Intro() {
             shadow-camera-bottom={-10}
             color="white"
           />
-          <DinosaurModel />
+          
           <CameraControls />
         </Canvas>
       </div>
@@ -103,7 +109,7 @@ function Intro() {
         <h1 className="hhh">AKA</h1>
         <h2 className="hh2" ref={textRef}>The WEBMASTER</h2>
       </div>
-      <h3 className="click">CLICK! He Won't Byte</h3>
+       
     </div>
   );
 }

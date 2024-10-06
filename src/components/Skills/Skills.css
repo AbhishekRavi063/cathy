@@ -1,7 +1,10 @@
 .logo-game-container {
   text-align: center;
-  padding: 20px;
-  background-color: rgb(255, 254, 254);
+  background-image: url('../../Assets/sky3.jpg');
+  background-repeat: no-repeat;
+  background-size: contain; /* Ensures the entire image fits inside */
+  background-position: center; /* Centers the image within the container */
+  background-color: black; /* Fallback color if the image doesn't load */
 }
 
 .logo-grid {
@@ -21,17 +24,17 @@
   font-size: 50px;
   font-weight: 600;
   color: black;
-  padding-top: 10px;
+  padding-top: 40px;
 }
 .points{
   color: rgb(16, 164, 34);
   font-weight: bold;
   font-size: 20px;
-  margin-top: 20px;
+  margin-top: -40px;
 }
 
 .logo-item {
-  padding: 20px; /* Increase padding for larger draggable area */
+  padding: 10px; /* Increase padding for larger draggable area */
    /* Dashed border for drag area */
   border-radius: 8px; /* Optional: add rounded corners */
   display: flex; /* Flexbox to align logo and name */
@@ -57,10 +60,11 @@
 }
 
 button {
-  margin-top: 20px; /* Space above the button */
+  margin-top: 10px; /* Space above the button */
   color: red;
   font-size: 30px;
   font-weight: bold;
+  margin-bottom: 50px;
 }
 .logo:hover{
   transform: scale(1.1);

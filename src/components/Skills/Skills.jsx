@@ -21,6 +21,7 @@ import restapi from '../../Assets/rest api.png'; // Import REST API image
 import postman from '../../Assets/postman.png'; // Import Postman image
 import colab from '../../Assets/colab.png'; // Import Colab image
 
+
 const originalLogosData = [
   { name: 'HTML', img: html },
   { name: 'Python', img: python },
@@ -100,6 +101,8 @@ const LogoMatchingGame = () => {
 
   return (
     <div className="logo-game-container">
+
+     
       <h1 className="know">Skills </h1>
       
       <div className="logo-grid">

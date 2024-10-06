@@ -24,7 +24,7 @@ body {
   left: 100px;
   color: white;
   font-size: 150px;
-  font-weight: 650;
+  font-weight: 150;
   z-index: 1;
   user-select: none;
   -webkit-user-select: none;
@@ -52,7 +52,8 @@ body {
 }
 
 .overlay-text.top {
-  top: 120px;
+  top: 150px;
+  font-size: 130px;
 }
 
 .overlay-text.bottom {
