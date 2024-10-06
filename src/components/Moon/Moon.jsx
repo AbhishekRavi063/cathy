@@ -1,22 +1,16 @@
 import React, { useRef, useEffect } from 'react';
-import { Canvas, useFrame, useThree } from '@react-three/fiber';
+import { Canvas, useFrame, useThree, useLoader } from '@react-three/fiber';
 import { OrbitControls, useGLTF } from '@react-three/drei';
 import moonModel from '../../Assets/moon2.glb'; 
 import './Moon.css';
 
 const MoonModel = () => {
   const modelRef = useRef();
-  const { scene } = useGLTF(moonModel);
-
-  useEffect(() => {
-    if (!scene) {
-      console.error('Failed to load GLTF model');
-    }
-  }, [scene]);
+  const { scene } = useGLTF(moonModel); // Load GLTF model
 
   useFrame(() => {
     if (modelRef.current) {
-      modelRef.current.rotation.y += 0.001;
+      modelRef.current.rotation.y += 0.001; // Rotate model
     }
   });
 
@@ -26,7 +20,7 @@ const MoonModel = () => {
 const CameraControls = () => {
   const { camera } = useThree();
   useEffect(() => {
-    camera.position.set(0, 0, 5);
+    camera.position.set(0, 0, 5); // Set initial camera position
   }, [camera]);
   return null;
 };
@@ -67,7 +61,7 @@ function Moon() {
             shadow-camera-bottom={-10}
             color="white"
           />
-          <MoonModel />
+          <MoonModel /> {/* Moon model will load here */}
           <CameraControls />
           <OrbitControls enableZoom={false} />
         </Canvas>
