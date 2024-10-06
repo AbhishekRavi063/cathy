@@ -65,8 +65,8 @@ function Moon() {
           <CameraControls />
           <OrbitControls enableZoom={false} />
         </Canvas>
-        <div className="overlay-text top">Hello, this is the</div>
-        <div className="overlay-text bottom">moon!</div>
+        <div className="overlay-text top">Hello, this is the </div>
+        <div className="overlay-text bottom"> moon!</div>
         <div className="arrow-icon">spin &#10148;</div>
       </div>
     </div>
