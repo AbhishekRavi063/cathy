@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import './About.css';
 import abhi from '../../Assets/3.jpg';
-import backgroundVideo from '../../Assets/earth.mp4'; // Make sure to replace this with the actual path to your video file
+import backgroundVideo from '../../Assets/asteroid.mp4'; // Make sure to replace this with the actual path to your video file
 
 function About() {
   const aboutRef = useRef();

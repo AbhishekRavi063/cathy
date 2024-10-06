@@ -1,11 +1,11 @@
 .introm {
   position: relative;
   width: 100%;
-  height: 800px;
+  height: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
-  
+ 
 }
 .background-video {
   position: absolute; /* Position it absolutely */
@@ -29,7 +29,7 @@
 
 .text-container {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 0; /* Place text behind canvas */
@@ -38,6 +38,7 @@
   background-color: transparent;
   user-select: none;
   overflow: hidden;
+  letter-spacing: 5px;
 }
 
 .glass-box {
@@ -60,6 +61,7 @@
   line-height: 130px;
   font-size: 130px;
   color: palegoldenrod;
+  letter-spacing: 5px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow effect for .hhh text */
 }
 
@@ -71,6 +73,7 @@
   transform: translateY(20px);
   transition: opacity 0.5s ease-out 0.5s, transform 1s ease-out 0.5s;
   text-shadow: 20px 10px 10px rgba(0, 0, 0, 0.5); /* Shadow effect for .hh2 text */
+  
 }
 
 .hh2.fade-in-up {

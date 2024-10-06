@@ -6,6 +6,8 @@ import NftCard from './components/Project/Projects.jsx';
 import Intro from './components/intro copy/Intro.jsx';
 import Skills from './components/Skills/Skills.jsx';
 import About from './components/About/About.jsx';
+import Roles from './components/Roles/Roles.jsx';
+import Contact from './components/Contact/Contact.jsx';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -24,6 +26,8 @@ function App() {
         <Intro />
         <Skills />
         <NftCard />
+        <Roles/>
+        <Contact/>
       </div>
     </div>
   );

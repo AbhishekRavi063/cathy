@@ -1,7 +1,5 @@
 body {
-  margin: 0;
-  background-color: black;
-  
+  margin: 0; 
   user-select: none;
    /* Hide scrollbar for Webkit browsers */
  ::-webkit-scrollbar {
@@ -20,17 +18,18 @@ scrollbar-width: none;
 
 
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
 .mainn {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 1300px;
   width: 100%; /* Ensure it takes the full width */
-  overflow: hidden; /* Hide any overflow */
+  overflow: hidden; /* Ensure the video and content don't overflow */
+  background-image: url('../../Assets/red.jpg');
+  background-size: cover; /* Ensures the image covers the entire div */
+  background-position: center; /* Centers the image in the div */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  margin-top: -230px;
 }
 
 .row {
@@ -39,10 +38,14 @@ code {
   width: 100%;
   padding: 2rem;
   gap: 3rem; /* Added gap for spacing between cards */
-  margin-left: 100px;
-  margin-top: -150px;
+  padding-left: 50px;
+  margin-top: -100px;
 }
-
+.ct{
+  letter-spacing: 3px;
+  padding-top: 10px;
+  margin-left: 10px;
+}
 
 .nft{
   user-select:none;
@@ -66,11 +69,13 @@ code {
   }
   ins{
     text-decoration: none;
+    letter-spacing: 2px;
+    
   }
   .main{
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     padding: 1rem;
     .tokenImage{
       border-radius: .5rem;
@@ -82,6 +87,8 @@ code {
     .description{
       margin: .5rem 0;
       color: #a89ec9;
+      letter-spacing: 1.8px;
+      margin-left: 10px;
     }
     .tokenInfo{
       display: flex;
@@ -92,6 +99,8 @@ code {
         align-items: center;
         color: #ee83e5;
         font-weight: 700;
+        letter-spacing: 2px;
+        margin-left: 10px;
         ins{
           margin-left: -.3rem;
           margin-right: .5rem;
@@ -100,6 +109,7 @@ code {
       .duration{
         display: flex;
         align-items: center;
+        letter-spacing: 2px;
         color: #a89ec9;
         margin-right: .2rem;
         ins{
@@ -113,6 +123,7 @@ code {
       align-items: center;
       margin-top: .2rem;
       margin-bottom: -.3rem;
+      letter-spacing: 2px;
       ins{
         color: #a89ec9;
         text-decoration: none;
@@ -163,4 +174,6 @@ code {
   color: grey;
   font-size: 150px;
   padding-bottom: 100px;
+  margin-top: 20px;
+  letter-spacing: 5px;
 }

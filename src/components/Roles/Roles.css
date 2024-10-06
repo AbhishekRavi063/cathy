@@ -1,0 +1,76 @@
+.rolesmain {
+    position: relative;
+    width: 100vw;
+    height: 1000px;
+    overflow: hidden; /* Ensure the video and content don't overflow */
+    
+  }
+  .background-video {
+    position: absolute; /* Position it absolutely */
+    top: 70%; /* Center it vertically */
+    left: 50%; /* Center it horizontally */
+    min-width: 10%; /* Ensure it covers the entire container */
+    min-height: 10%;
+    z-index:0; /* Behind all content */
+    transform: translate(-50%, -50%); /* Center the video */
+    object-fit: cover; /* Cover the entire area */
+  }
+  
+  .glassbox {
+    position: relative;
+    z-index: 1; /* Above the video */
+    width: 60%; /* Adjust width as needed */
+    height: 55%; /* Adjust height as needed */
+    margin: auto;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%); /* Center the box */
+    border-radius: 10px; /* Rounded corners */
+    backdrop-filter: blur(0px); /* Glass effect */
+    
+    padding: 20px; /* Add padding inside the box */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; /* White text for contrast */
+  } 
+
+.role{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 100px;
+   
+}
+  
+.glassbox ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .glassbox li {
+    margin: 15px 0;
+    font-size: 1.2rem;
+    text-shadow: 0px 0px 5px rgba(0,0,0,0.7);
+    letter-spacing: 1px;
+    color: white;
+    text-align: center;
+  }
+  
+  .glassbox li::before {
+    content: "•"; /* Space-themed bullet points */
+    color: #f0c674;
+    margin-right: 10px;
+  }
+  .glassbox li::after {
+    content: "•"; /* Space-themed bullet points */
+    color: #f0c674;
+    margin-left: 10px;
+  }
+  h1.role {
+    color: #fff;
+    font-size: 3rem;
+    z-index: 1;
+    margin-bottom: 2rem;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+  }
+  

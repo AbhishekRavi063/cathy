@@ -3,7 +3,8 @@ import './Projects.css';
 import netflix from '../../Assets/Netflix.png';
 import github from '../../Assets/github-logo.png';
 import fitclub from "../../Assets/Fitclub.png"
-import blackhole from '../../Assets/blackhole.mp4'
+
+
 
 
 const cardData = [
@@ -58,7 +59,7 @@ const NftCard = () => {
   return (
     <div className="mainn">
 
-
+ 
       <h1 className='ph'>Projects</h1>
       <div className="row">
         {cardData.map((card, index) => (
@@ -69,7 +70,7 @@ const NftCard = () => {
                 src={card.image}
                 alt="NFT"
               />
-              <h2>{card.title}</h2>
+              <h2 className='ct'>{card.title}</h2>
               <p className="description">{card.description}</p>
               <div className="tokenInfo">
                 <div className="price">
